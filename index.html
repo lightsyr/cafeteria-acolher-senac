@@ -118,7 +118,7 @@
           O carinho está vazio
       </div>
 
-      <button @click="confirmPurchase()" class="carrinho__finalizar">Finalizar Compra</button>
+      <button x-show="cart.length > 0" @click="confirmPurchase()" class="carrinho__finalizar">Finalizar Compra</button>
   </aside>
 
 
